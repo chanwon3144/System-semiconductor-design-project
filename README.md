@@ -62,7 +62,8 @@ docs/
 ---
 
 ## 🧭 System Block Diagram — Watch/Stopwatch + UART
-![UART + Watch Top RTL](docs/rtl_watch_uart_top.png)
+<img width="1765" height="703" alt="스크린샷 2025-09-16 182754" src="https://github.com/user-attachments/assets/5356dde8-d5ec-4ea7-88d8-f4d48ecf9ea5" />
+
 
 **구성 설명**
 - **U_UART (uart_controller)**: UART RX/TX 및 보오율 분주. 수신 바이트(`rx_data[7:0]`)와 완료 펄스(`rx_done`) 제공.
@@ -82,7 +83,7 @@ docs/
 | 입력 | 의미 | 비고 |
 |---|---|---|
 | `sw[1]` | 모드 | 0=Stopwatch / 1=Watch |
-| `sw[0]` | 뷰 단위 | 0=msec·sec / 1=min·hour |
+| `sw[0]` | 뷰 단위 | 0=sec·msec / 1=hour·min |
 | `btnR` | 실행/정지(Stopwatch) | |
 | `btnL` | 초기화(Stopwatch) | |
 | `btnU` | 업(Watch) | |
