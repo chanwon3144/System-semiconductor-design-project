@@ -90,7 +90,8 @@ docs/
 ---
 
 ## 📷 (Optional) Camera Pipeline
-![RTL Block Diagram](docs/rtl_camera_vga.png)
+<img width="1765" height="703" alt="image" src="https://github.com/user-attachments/assets/760be905-b467-4086-bfa0-fc0a65b343dd" />
+
 
 - OV7670 `PCLK/HREF/VSYNC/D[7:0]` 캡처 → RGB565 → **BRAM(dual‑port)**  
 - BRAM write: `ov7670_pclk` / read: 시스템 `clk` → **VGA 640×480**  
